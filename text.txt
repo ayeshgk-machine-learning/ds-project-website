@@ -1,0 +1,24 @@
+ds-dashboard
+ds-dashboard-e021d
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAY0ZL_Qb-gEEKhLY91q7MUfWX182YbZGM",
+  authDomain: "ds-dashboard-e021d.firebaseapp.com",
+  projectId: "ds-dashboard-e021d",
+  storageBucket: "ds-dashboard-e021d.appspot.com",
+  messagingSenderId: "513620718317",
+  appId: "1:513620718317:web:08409424e08d9b13e752e4",
+  measurementId: "G-QCB3S4341C"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
