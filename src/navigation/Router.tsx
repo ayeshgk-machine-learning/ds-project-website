@@ -9,7 +9,7 @@ import  Home  from "../views/Home";
 import Predict from "../views/Predict";
 
 
-const Router = ({handleLogout}) => {
+const Router = () => {
     return (
         <BrowserRouter>
         <Routes>
@@ -20,7 +20,7 @@ const Router = ({handleLogout}) => {
             <Route path="/" 
                 element={
                     <RequireAuth>
-                        <Home handleLogout={handleLogout}/>
+                        <Home/>
                     </RequireAuth>} 
             />
             <Route path="/predict" 

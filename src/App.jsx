@@ -1,16 +1,8 @@
-import { useState,useEffect } from 'react'
-import logo from './logo.svg'
-import { BrowserRouter,Route, Routes,Link } from "react-router-dom";
-// import { useNavigate } from 'react-router-dom'
-import Loader from './components/Loader';
 
 
-import 'bootstrap/dist/css/bootstrap.css';
+
 import './App.css'
-
 import fire from './fire';
-import {  getAuth,onAuthStateChanged,signInWithEmailAndPassword } from "firebase/auth";
-
 import Router from './navigation/Router';
 
 
@@ -18,20 +10,20 @@ import Router from './navigation/Router';
 function App() {
   // const navigate = useNavigate();
 
-  const handleLogout=()=>{
-        fire
-        .signOut()
-        .catch(error=>{
-          console.log(error)
-        })
+  // const handleLogout = () => {
+  //   fire
+  //     .signOut()
+  //     .catch(error => {
+  //       console.log(error)
+  //     })
 
-        sessionStorage.removeItem('AuthToken');
-        // navigate('/home')
+  //   sessionStorage.removeItem('AuthToken');
+  //   // navigate('/home')
 
-  }
+  // }
 
   //   const handleListner = ()=>{
- 
+
   //   onAuthStateChanged(fire,user=>{
   //     if(user){
   //       // clearAuth();
@@ -79,7 +71,7 @@ function App() {
 
   // useEffect(()=>{
   //   setLoading(true);
-  
+
   //   setTimeout(() => {
   //     setLoading(false);
   //   }, 1500);
@@ -89,43 +81,22 @@ function App() {
   //   return <Loader />;
   // }
 
-//   const RequireAuth = ({children}) => {
-//     const location = useLocation();
-//     const user = getAuth();
-//     console.log("auth: " ,user);
+  //   const RequireAuth = ({children}) => {
+  //     const location = useLocation();
+  //     const user = getAuth();
+  //     console.log("auth: " ,user);
 
-//     return (
-//         <div>
-//             {userAccount.user ? children : <Navigate to="/login" state={{from:location.pathname}}/>}
-//         </div>
-//     )
-// }
+  //     return (
+  //         <div>
+  //             {userAccount.user ? children : <Navigate to="/login" state={{from:location.pathname}}/>}
+  //         </div>
+  //     )
+  // }
 
   return (
     <div className="App">
-      
-      {/* { userAccount.user  
-      ? <Home 
-      handleLogout={handleLogout}
-      user = {userAccount}
-      /> 
-      :<Login
-      handleLogin={handleLogin}
-      error={error}
-      user={userAccount}
-      setUser={setUserAccount}
-      />
-      } */}
-      <Router 
-        handleLogout={handleLogout}
-      />
-          
-      
-    </div>
-    // <>
-    //   <_404/>
-    // </>
-  )
+      <Router />
+    </div>)
 }
 
 export default App

@@ -1,6 +1,48 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,700,800");
-/* login and home */
 
+/** home css */
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgb(13, 13, 19) 0%,
+    rgba(17, 13, 26, 0.9) 59%,
+    rgba(9, 13, 20, 0.9) 100%
+  );
+}
+
+.hero nav {
+  background: rgb(17 24 39);
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero nav h2 {
+  color: #fff;
+}
+
+.hero nav button {
+  width: 86px;
+  padding: 8px 0;
+  background: #ECCA00;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(#0f1a2b, #411d63);
+  /* padding-top: 4.5rem; */
+}
+
+/** login css */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +58,7 @@ button {
   color: #fff;
   font-size: 16px;
   letter-spacing: 1px;
-  background: rgb(168 85 247);
+  background: #ecca00;
   cursor: pointer;
 }
 
@@ -39,15 +81,15 @@ button {
   justify-content: center;
   background: radial-gradient(
     ellipse at left bottom,
-    rgba(22, 24, 47, 1) 0%,
-    rgba(38, 20, 72, 0.9) 59%,
-    rgb(17, 24, 39,0.9) 100%
+    rgb(13, 13, 19) 0%,
+    rgba(17, 13, 26, 0.9) 59%,
+    rgba(9, 13, 20, 0.9) 100%
   );
   box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
 }
 
 .login .loginContainer label {
-  color: white;
+  color: #ecca00;
   margin: 14px 0;
   display: block;
   font-size: 22px;
@@ -61,7 +103,7 @@ button {
   font-size: 19px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: #ecca00;
   letter-spacing: 1px;
 }
 
@@ -73,7 +115,7 @@ button {
 .login .loginContainer .btnContainer p {
   margin: 14px 0 0 0;
   text-align: right;
-  color: #fff;
+  color: #ec5300;
 }
 
 .login .loginContainer .btnContainer p span {
@@ -90,39 +132,10 @@ button {
 }
 
 .login .loginContainer .errorMsg {
-  color: red;
+  color: #ec0000;
   font-size: 16px;
 }
 
-.hero {
-  width: 100%;
-  min-height: 100vh;
-  background: radial-gradient(
-    ellipse at left bottom,
-    rgba(22, 24, 47, 1) 0%,
-    rgba(38, 20, 72, 0.9) 59%,
-    rgba(17, 27, 75, 0.9) 100%
-  );
-}
-
-.hero nav {
-  background: rgb(17 24 39);
-  width: 100%;
-  padding: 20px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.hero nav h2 {
-  color: #fff;
-}
-
-.hero nav button {
-  width: 86px;
-  padding: 8px 0;
-  background: rgb(168 85 247);
-}
 
 
 /* loader */
@@ -142,10 +155,10 @@ button {
   filter: url(#w-0);
 }
 .stop1 {
-  stop-color: rgb(168 85 247);
+  stop-color: rgb(238, 183, 17);
 }
 .stop2 {
-  stop-color: rgb(37 99 235);
+  stop-color: rgb(244, 42, 16);
 }
 .path-class {
   animation: key01 8s infinite linear;
@@ -184,20 +197,57 @@ button {
 
 }
 
+/* predict */
+.predict label {
+  color: #ecca00;
+  /* margin: 14px 0; */
+  /* display: block; */
+  /* font-size: 22px; */
+  line-height: 1;
+}
+
+.predict input {
+  /* width: 100%; */
+  border: none;
+  outline: none;
+  /* font-size: 19px; */
+  /* padding: 10px; */
+  background: rgba(255, 255, 255, 0.1);
+  color: #ecca00;
+  letter-spacing: 1px;
+}
+
+.predict input:focus {
+    /* width: 100%; */
+  border: none;
+  outline: none;
+  /* font-size: 19px; */
+  /* padding: 10px; */
+  background: rgba(255, 255, 255, 0.1);
+  color: #ecca00;
+  letter-spacing: 1px;
+}
+
 
 /** not found _404 page **/
 
-html {
+/* html {
   height: 100%;
-}
+} */
 
-body {
+/* body {
   margin: 0;
   height: 100%;
   background: linear-gradient(#0f1a2b, #411d63);
 
+} */
+.not-found-container{
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(#0f1a2b, #411d63);
+  height: 100%;
+   overflow: hidden;
 }
-
 
 .not-found {
   position: relative;
@@ -205,7 +255,9 @@ body {
   top: 20%;
   display: inline-block;
   width: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
 }
 .not-found span {
   display: inline-block;

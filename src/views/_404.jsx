@@ -4,7 +4,7 @@ const _404 = () => {
   (() => {
     const max_stars = 100;
     const stars = [];
-  
+
     for (let i = 0; i < max_stars; i++) {
       const star = document.createElement("span");
       const size = Math.floor(Math.random() * 3) + 1;
@@ -17,7 +17,7 @@ const _404 = () => {
       stars.push(star);
       document.body.appendChild(star);
     }
-  
+
     for (let j = 0; j < max_stars * 0.6; j++) {
       const star = stars[j];
       star.style.animationName = "glow";
@@ -34,47 +34,47 @@ const _404 = () => {
 
 
 
-    return (
-        <>
+  return (
+    <div class="not-found-container">
 
-        <div class="not-found" >
-  <span>4</span>
-  <div class="moon">
-    <span class="crater"></span>
-    <span class="crater"></span>
-    <span class="crater"></span>
-    <span class="crater"></span>
-  </div>
-  <span>4</span>
-</div>
-<div class="ground">
-  <div class="rock"></div>
-  <div class="rock"></div>
-  <div class="rock"></div>
-</div>
+      <div class="not-found" >
+        <span>4</span>
+        <div class="moon">
+          <span class="crater"></span>
+          <span class="crater"></span>
+          <span class="crater"></span>
+          <span class="crater"></span>
+        </div>
+        <span>4</span>
+      </div>
+      <div class="ground">
+        <div class="rock"></div>
+        <div class="rock"></div>
+        <div class="rock"></div>
+      </div>
 
-<div class="shooting">
-  <div class="core"></div>
-  <div class="trail"></div>
-</div>
+      <div class="shooting">
+        <div class="core"></div>
+        <div class="trail"></div>
+      </div>
 
-<div class="container-button">
-		<a href="/">
-			<div class="button">
-        <div class="star"></div>
-				<div class="star s2"></div>
-				<div class=" star s3"></div>
-			<span>Go Home</span>
-			</div>
-		</a>
-	</div>
+      <div class="container-button">
+        <a href="/">
+          <div class="button">
+            <div class="star"></div>
+            <div class="star s2"></div>
+            <div class=" star s3"></div>
+            <span>Go Home</span>
+          </div>
+        </a>
+      </div>
 
-<svg class="cactus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
-  <metadata>
-    Created by potrace 1.15, written by Peter Selinger 2001-2017
-  </metadata>
-  <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-    <path d="M3650 12793 c-269 -30 -610 -116 -848 -215 -221 -91 -504 -249 -633
+      <svg class="cactus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
+        <metadata>
+          Created by potrace 1.15, written by Peter Selinger 2001-2017
+        </metadata>
+        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+          <path d="M3650 12793 c-269 -30 -610 -116 -848 -215 -221 -91 -504 -249 -633
 -353 -94 -76 -184 -187 -237 -290 -80 -158 -160 -529 -192 -894 -29 -316 59
 -835 227 -1356 31 -93 124 -341 208 -550 298 -742 332 -892 390 -1710 43 -604
 68 -1139 56 -1198 -26 -127 -43 -362 -39 -537 4 -207 10 -197 -96 -160 -314
@@ -96,10 +96,10 @@ const _404 = () => {
 -18 -55 -2 -2 9 -19 116 -36 237 -17 121 -45 297 -61 390 -54 312 -71 459
 -104 905 -20 271 -19 397 6 787 18 282 20 395 16 808 -5 498 -8 540 -52 670
 -56 166 -188 389 -290 490 -118 118 -304 195 -540 224 -85 10 -268 12 -345 4z" />
-  </g>
-</svg>
+        </g>
+      </svg>
 
-</>);
+    </div>);
 }
 
 export default _404;
